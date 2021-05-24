@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import StudentList from './components/StudentList'
+import { StudentContext } from './context/StudentContext'
 
 const data = [
   { id: 1, name: 'Jason Response', email: 'jason@mail.com', age: 23, color: 'lightcyan' },
@@ -14,12 +15,14 @@ const App = () => {
     setStudents(students.map((student) => (student.id === id ? { ...student, color: color } : student)))
 
   return (
-    <div className="App">
-      <header>
-        <h1>Welcome!</h1>
-      </header>
-      <StudentList students={students} changeColor={changeColor} />
-    </div>
+    <StudentContext.Provider value={{students, changeColor}}>
+      <div className="App">
+        <header>
+          <h1>Welcome!</h1>
+        </header>
+        <StudentList />
+      </div>
+    </StudentContext.Provider>
   )
 }
 
