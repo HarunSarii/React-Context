@@ -2,7 +2,8 @@ import { useContext } from 'react'
 import { StudentContext } from '../context/StudentContext'
 
 const StudentItem = ({ student }) => {
-  const { changeColor }= useContext(StudentContext);  
+  const deger = useContext(StudentContext)
+  console.log(deger)
   return (
     <div style={{ background: student.color, paddingBottom: '2rem', paddingTop: '1rem', marginBottom: '1rem' }}>
       <h3>{student.name}</h3>
