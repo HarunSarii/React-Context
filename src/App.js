@@ -15,7 +15,7 @@ const App = () => {
     setStudents(students.map((student) => (student.id === id ? { ...student, color: color } : student)))
 
   return (
-    <StudentContext.Provider>
+    <StudentContext.Provider value={{ students, changeColor }}>
       <div className="App">
         <header>
           <h1>Welcome!</h1>

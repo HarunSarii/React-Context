@@ -3,7 +3,7 @@ import StudentItem from './StudentItem'
 import { StudentContext } from '../context/StudentContext'
 
 const StudentList = () => {
-  const { students } = useContext(StudentContext);
+  const { students } = useContext(StudentContext)
   return (
     <>
       <h2>Student List</h2>
