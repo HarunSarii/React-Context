@@ -1,3 +1,6 @@
+![useContext](https://user-images.githubusercontent.com/75949382/123537078-635a4c00-d736-11eb-94da-1d5312d9e72e.gif)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
